@@ -1,5 +1,5 @@
 {% set name = "ckmeans-1d-dp" %}
-{% set version = "4.3.4.post0" %}
+{% set version = "4.3.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ckmeans_1d_dp-{{ version }}.tar.gz
-  sha256: efc973c661cabf77ea48161823709a113fa70c1c1c20800c724b003b5d4b8f5e
+  sha256: d511b3dddeb162c782ca16245ca7c3c6ade6faf5f5472ac3bd69d434c05dc94e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv

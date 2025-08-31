@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ckmeans_1d_dp-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ckmeans_1d_dp-{{ version }}.tar.gz
   sha256: efc973c661cabf77ea48161823709a113fa70c1c1c20800c724b003b5d4b8f5e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 3
 
 requirements:
   build:
